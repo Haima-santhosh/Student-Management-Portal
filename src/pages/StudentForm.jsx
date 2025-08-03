@@ -64,7 +64,7 @@ const handleChange = (e) => {
         />
         <input type="email" name="email" placeholder="Email" value={formData.email} onChange={handleChange} required className="w-full px-4 py-2 border rounded" />
         <input type="text" name="phone" placeholder="Phone" value={formData.phone} onChange={handleChange} required className="w-full px-4 py-2 border rounded"/>
-        <input type="text" name="profile_image" placeholder="Profile Image URL" value={formData.profile_image} onChange={handleChange} className="w-full px-4 py-2 border rounded"/>
+        <input type="text" name="profile_image" placeholder="Profile Image URL" value={formData.profile_image} onChange={handleChange} required className="w-full px-4 py-2 border rounded"/>
          {formData.profile_image && (
           <div className="text-center">
             <img src={formData.profile_image} alt="Preview Image" className="mx-auto h-24 w-24 object-cover rounded-full border" 
